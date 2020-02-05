@@ -6,7 +6,7 @@ mongoose.Promise = global.Promise;
 
 let DatosSchema = mongoose.Schema({
 	nombre: { type : String },
-	Actividad: { type : String },
+	actividad: { type : String },
 	duracion: { type: Number },
 	distancia : { type: Number },
 	distancia_maxima : { type: String},
