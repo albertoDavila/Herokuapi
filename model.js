@@ -22,7 +22,7 @@ let DatosSchema = mongoose.Schema({
 // 				 required : true }
 // })
 
-let Datos = mongoose.model( 'Viajes', DatosSchema );
+let Datos = mongoose.model( 'registros', DatosSchema );
 // let User = mongoose.model( 'User', userSchema );
 
 // let UserList = {
