@@ -10,7 +10,7 @@ let DatosSchema = mongoose.Schema({
 	duracion: { type: Number },
 	distancia : { type: Number },
 	distancia_maxima : { type: String},
-	calorias : { type: String },
+	calorias : { type: String }
 
 });
 
