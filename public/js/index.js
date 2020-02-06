@@ -1,6 +1,6 @@
 
 function init(){
-	let url = '/api/gastosVP';
+	let url = '/api/RegistrosE';
 	let settings = {
 		method: 'GET'
 	}
@@ -17,7 +17,7 @@ function init(){
 
 			for ( let i = 0; i < responseJSON.length; i ++ ){
 				$('.listOfVPs').append(`<li>
-				${responseJSON[i].vp} - Periodo JD19: ${responseJSON[i].gastosjd19} unidades
+				${responseJSON[i].nombre} - Periodo JD19: ${responseJSON[i].actividad} unidades
 										</li>`)
 			}
 		})
