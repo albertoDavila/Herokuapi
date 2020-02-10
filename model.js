@@ -81,16 +81,16 @@ let VPList = {
 					throw Error( error );
 				});
 	}
-	// ,
-	// post : function( newPet ){
-	// 	return Pet.create( newPet )
-	// 			.then( pet => {
-	// 				return pet;
-	// 			})
-	// 			.catch( error => {
-	// 				throw Error(error);
-	// 			});
-	// }
+	 ,
+	 post : function( newRegistro ){
+	 	return Datos.create( newRegistro )
+	 			.then( datosVP => {
+	 				return datosVP;
+	 			})
+	 			.catch( error => {
+	 				throw Error(error);
+	 			});
+	 }
 };
 
 module.exports = { VPList };
