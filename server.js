@@ -79,7 +79,10 @@ app.get( "/api/RegistrosE", ( req, res, next ) => {
 app.post( "/api/RegistroE", jsonParser, ( req, res, next ) => {
 	let nombre = req.body.nombre;
  	let actividad = req.body.actividad;
- 	let id = req.body.id;
+ 	let duracion = req.body.duracion;
+	let distancia = req.body.distancia;
+	let calorias = req.body.calorias;
+	
 
 	let newRegistro = {
 		nombre,
