@@ -6,11 +6,12 @@ mongoose.Promise = global.Promise;
 
 let DatosSchema = mongoose.Schema({
 	nombre: { type : String },
-	actividad: { type : String },
-	duracion: { type: Number },
-	distancia : { type: Number },
-	distancia_maxima : { type: String},
-	calorias : { type: String }
+	pregunta1: { type : String },
+	pregunta2: { type: String },
+	pregunta3 : { type: String },
+	pregunta4 : { type: String },
+	pregunta5 : { type: String },
+	promedio : { type: String }
 
 });
 
