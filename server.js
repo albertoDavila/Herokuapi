@@ -78,18 +78,22 @@ app.get( "/api/RegistrosE", ( req, res, next ) => {
 
 app.post( "/api/RegistroE", jsonParser, ( req, res, next ) => {
 	let nombre = req.body.nombre;
- 	let actividad = req.body.actividad;
- 	let duracion = req.body.duracion;
-	let distancia = req.body.distancia;
-	let calorias = req.body.calorias;
+ 	let pregunta1 = req.body.pregunta1;
+ 	let pregunta2 = req.body.pregunta2;
+	let pregunta3 = req.body.pregunta3;
+	let pregunta4 = req.body.pregunta4;
+	let pregunta5 = req.body.pregunta5;
+	let promedio = req.body.promedio;
 	
 
 	let newRegistro = {
 		nombre,
- 		actividad,
- 		duracion, 
-		distancia, 
-		calorias
+ 		pregunta1,
+ 		pregunta2, 
+		pregunta3, 
+		pregunta4,
+		pregunta5,
+		promedio
  	};
 
  	VPList.post(newRegistro)
