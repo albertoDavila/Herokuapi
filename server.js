@@ -75,7 +75,7 @@ app.get( "/api/RegistrosE", ( req, res, next ) => {
 			})
 		});
 });
-
+/*
 app.post( "/api/RegistroE", jsonParser, ( req, res, next ) => {
 	let nombre = req.body.nombre;
  	let pregunta1 = req.body.pregunta1;
@@ -120,7 +120,7 @@ app.post( "/api/RegistroE", jsonParser, ( req, res, next ) => {
  });
 
 let server;
-
+*/
 function runServer(port, databaseUrl){
 	return new Promise( (resolve, reject ) => {
 		mongoose.connect(databaseUrl, response => {
