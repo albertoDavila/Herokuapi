@@ -84,6 +84,9 @@ app.post( "/api/RegistroE", jsonParser, ( req, res, next ) => {
 	let pregunta4 = req.body.pregunta4;
 	let pregunta5 = req.body.pregunta5;
 	let promedio = req.body.promedio;
+	let podcast = req.body.podcast;
+	let audiolibro = req.body.audiolibro; 
+	let libro= req.body.libro;
 	
 
 	let newRegistro = {
@@ -93,7 +96,10 @@ app.post( "/api/RegistroE", jsonParser, ( req, res, next ) => {
 		pregunta3, 
 		pregunta4,
 		pregunta5,
-		promedio
+		promedio,
+		podcast,
+		audiolibro, 
+		libro
  	};
 
  	VPList.post(newRegistro)
