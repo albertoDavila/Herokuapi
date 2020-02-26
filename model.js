@@ -8,13 +8,13 @@ let DatosSchema = mongoose.Schema({
 	nombre: { type : String },
 	pregunta1: { type : String },
 	pregunta2: { type: String },
-	pregunta3 : { type: String },
-	pregunta4 : { type: String },
-	pregunta5 : { type: String },
-	promedio : { type: Integer },
-	podcast : { type: String },
-	audiolibro : { type: String },
-	libro : { type: String }
+	pregunta3: { type: String },
+	pregunta4: { type: String },
+	pregunta5: { type: String },
+	promedio: { type: Integer },
+	podcast: { type: String },
+	audiolibro: { type: String },
+	libro: { type: String }
 
 });
 
