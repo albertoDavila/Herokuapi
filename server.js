@@ -103,7 +103,7 @@ app.get( "/api/RegistrosE", ( req, res, next ) => {
 // 			});
 // 		});
 // });
-*/
+
 let server;
 
 function runServer(port, databaseUrl){
