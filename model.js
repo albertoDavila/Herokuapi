@@ -85,7 +85,7 @@ let VPList = {
 					throw Error( error );
 				});
 	}
-	 ,
+	/* ,
 	 post : function( newRegistro ){
 	 	return Datos.create( newRegistro )
 	 			.then( datosVP => {
@@ -94,7 +94,7 @@ let VPList = {
 	 			.catch( error => {
 	 				throw Error(error);
 	 			});
-	 }
+	 } */
 };
 
 module.exports = { VPList };
