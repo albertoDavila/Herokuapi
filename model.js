@@ -4,7 +4,7 @@ let bcrypt = require('bcryptjs');
 mongoose.Promise = global.Promise;
 
 
-let DatosSchema = mongoose.Schema({
+let vicepresidenciaSchema = mongoose.Schema({
 	nombre: { type : String },
 	pregunta1: { type : String },
 	pregunta2: { type: String },
@@ -26,7 +26,7 @@ let DatosSchema = mongoose.Schema({
 // 				 required : true }
 // })
 
-let Datos = mongoose.model( 'registros', DatosSchema );
+let Vicepresidencia = mongoose.model( 'registros', vicepresidenciaSchema );
 // let User = mongoose.model( 'User', userSchema );
 
 // let UserList = {
@@ -77,7 +77,7 @@ let Datos = mongoose.model( 'registros', DatosSchema );
 
 let VPList = {
 	get : function(){
-		return Datos.find()
+		return Vicepresidencia.find()
 				.then( datosVP => {
 					return datosVP;
 				})
@@ -85,16 +85,16 @@ let VPList = {
 					throw Error( error );
 				});
 	}
-	/* ,
-	 post : function( newRegistro ){
-	 	return Datos.create( newRegistro )
-	 			.then( datosVP => {
-	 				return datosVP;
-	 			})
-	 			.catch( error => {
-	 				throw Error(error);
-	 			});
-	 } */
+	// ,
+	// post : function( newPet ){
+	// 	return Pet.create( newPet )
+	// 			.then( pet => {
+	// 				return pet;
+	// 			})
+	// 			.catch( error => {
+	// 				throw Error(error);
+	// 			});
+	// }
 };
 
 module.exports = { VPList };
