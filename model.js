@@ -11,7 +11,7 @@ let vicepresidenciaSchema = mongoose.Schema({
 	pregunta3: { type: String },
 	pregunta4: { type: String },
 	pregunta5: { type: String },
-	promedio: { type: Integer },
+	promedio: { type: Number },
 	podcast: { type: String },
 	audiolibro: { type: String },
 	libro: { type: String }
