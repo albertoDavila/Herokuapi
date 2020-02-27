@@ -118,9 +118,9 @@ app.post( "/api/RegistroE", jsonParser, ( req, res, next ) => {
  			});
  		});
  });
-
-let server;
 */
+let server;
+
 function runServer(port, databaseUrl){
 	return new Promise( (resolve, reject ) => {
 		mongoose.connect(databaseUrl, response => {
