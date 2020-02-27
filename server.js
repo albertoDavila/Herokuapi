@@ -75,49 +75,34 @@ app.get( "/api/RegistrosE", ( req, res, next ) => {
 			})
 		});
 });
-/*
-app.post( "/api/RegistroE", jsonParser, ( req, res, next ) => {
-	let nombre = req.body.nombre;
- 	let pregunta1 = req.body.pregunta1;
- 	let pregunta2 = req.body.pregunta2;
-	let pregunta3 = req.body.pregunta3;
-	let pregunta4 = req.body.pregunta4;
-	let pregunta5 = req.body.pregunta5;
-	let promedio = req.body.promedio;
-	let podcast = req.body.podcast;
-	let audiolibro = req.body.audiolibro; 
-	let libro= req.body.libro;
-	
 
-	let newRegistro = {
-		nombre,
- 		pregunta1,
- 		pregunta2, 
-		pregunta3, 
-		pregunta4,
-		pregunta5,
-		promedio,
-		podcast,
-		audiolibro, 
-		libro
- 	};
+// app.post( "/api/postPet", jsonParser, ( req, res, next ) => {
+// 	let name = req.body.name;
+// 	let typeOfPet = req.body.typeOfPet;
+// 	let id = req.body.id;
 
- 	VPList.post(newRegistro)
- 		.then( pet => {
- 			return res.status( 201 ).json({
- 				message : "Pet added to the list",
- 				status : 201,
- 				student : pet
-			});
-		})
-		.catch( error => {
-			res.statusMessage = "No pudimos accesar a la base de datos. Intenta más tarde.";
-			return res.status( 500 ).json({
- 				status : 500,
- 				message : "No pudimos accesar a la base de datos. Intenta más tarde."
- 			});
- 		});
- });
+// 	let newPet = {
+// 		name,
+// 		typeOfPet,
+// 		id
+// 	};
+
+// 	PetList.post(newPet)
+// 		.then( pet => {
+// 			return res.status( 201 ).json({
+// 				message : "Pet added to the list",
+// 				status : 201,
+// 				student : pet
+// 			});
+// 		})
+// 		.catch( error => {
+// 			res.statusMessage = "Something went wrong with the DB. Try again later.";
+// 			return res.status( 500 ).json({
+// 				status : 500,
+// 				message : "Something went wrong with the DB. Try again later."
+// 			});
+// 		});
+// });
 */
 let server;
 
